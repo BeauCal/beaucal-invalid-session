@@ -1,7 +1,6 @@
 {
     "name": "beaucal/beaucal-invalid-session",
     "description": "When session validation fails, the session is simply cleared. When you'd rather avoid nasty blocking errors.",
-    "type": "module",
     "license": "MIT",
     "keywords": [
         "zf2", "session", "session validation"
