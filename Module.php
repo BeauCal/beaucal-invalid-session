@@ -1,6 +1,6 @@
 <?php
 
-namespace InvalidSession;
+namespace BeaucalInvalidSession;
 
 use Zend\Mvc\MvcEvent;
 use Zend\Session\AbstractManager;
