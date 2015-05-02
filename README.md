@@ -1,4 +1,4 @@
-# beaucal-invalid-session
+# BeaucalInvalidSession
 
 ### Installation
 In application.config.php, install early, as follows:
