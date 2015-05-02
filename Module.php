@@ -3,7 +3,6 @@
 namespace InvalidSession;
 
 use Zend\Mvc\MvcEvent;
-use Zend\Session\Container;
 use Zend\Session\AbstractManager;
 
 class Module {
@@ -21,7 +20,6 @@ class Module {
     protected function forgetInvalidSession(AbstractManager $sessionManager) {
         try {
             $sessionManager->start();
-            Container::setDefaultManager($sessionManager);
             return;
         } catch (\Exception $e) {
 
