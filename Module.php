@@ -2,7 +2,6 @@
 
 namespace InvalidSession;
 
-use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
 use Zend\Session\Container;
 use Zend\Session\AbstractManager;
@@ -14,10 +13,6 @@ class Module {
     }
 
     public function onBootstrap(MvcEvent $e) {
-        $eventManager = $e->getApplication()->getEventManager();
-        $moduleRouteListener = new ModuleRouteListener();
-        $moduleRouteListener->attach($eventManager);
-
         $sessionManager = $e->getApplication()->getServiceManager()
         ->get('Zend\Session\SessionManager');
         $this->forgetInvalidSession($sessionManager);
