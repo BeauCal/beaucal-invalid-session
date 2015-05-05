@@ -15,7 +15,8 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zend-session" : "~2.1"
+        "zendframework/zend-session" : "~2.1",
+		"zendframework/zend-mvc" : "~2.1"
     },
     "autoload": {
         "classmap": [
