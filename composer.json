@@ -21,6 +21,9 @@
     "autoload": {
         "classmap": [
             "./Module.php"
-        ]
+        ],
+        "psr-0": {
+            "beaucalInvalidSession\\": "vendor/beaucal/"
+        }
     }
 }
