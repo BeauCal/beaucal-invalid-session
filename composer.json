@@ -1,5 +1,5 @@
 {
-    "name": "beaucal/beaucal-invalid-session",
+    "name": "danitome24/beaucal-invalid-session",
     "description": "When ZendSession validation fails, the session is simply cleared. When you'd rather avoid nasty blocking errors.",
     "license": "MIT",
     "keywords": [
@@ -21,6 +21,9 @@
     "autoload": {
         "classmap": [
             "./Module.php"
-        ]
+        ],
+        "psr-0": {
+            "beaucalInvalidSession\\": "vendor/beaucal/"
+        }
     }
 }
